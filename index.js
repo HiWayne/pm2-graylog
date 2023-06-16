@@ -79,20 +79,20 @@ function logDataItem(data = "", explicitLevel) {
         level = levelMapping[Number(parsed.level)] || level;
         delete parsed.level;
       }
-      let msg = "";
-      if (parsed.msg) {
-        msg = parsed.msg;
-        delete parsed.msg;
+      let message = "";
+      if (parsed.message) {
+        message = parsed.message;
+        delete parsed.message;
       }
       if (conf.graylogType === "json") {
-        logData = [JSON.stringify({ msg }), parsed];
+        logData = [JSON.stringify({ message }), parsed];
       } else {
-        logData = [msg, parsed];
+        logData = [message, parsed];
       }
     }
   } else {
     if (conf.graylogType === "json") {
-      logData = [JSON.stringify({ msg: data })];
+      logData = [JSON.stringify({ message: data })];
     }
   }
   (logMethods[level] || logMethods[LEVELS.info]).apply(gelf, logData);

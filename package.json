@@ -1,6 +1,6 @@
 {
   "name": "pm2-graylog",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "pm2's log sending to graylog",
   "main": "index.js",
   "scripts": {
