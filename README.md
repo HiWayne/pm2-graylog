@@ -2,7 +2,7 @@
 
 pm2 module for logging to Graylog.
 
-Inspired by [pm2-gelf-pro](https://github.com/sethblack/pm2-gelf-pro)
+Inspired by [pm2-gelf-json](https://github.com/art-ws/pm2-gelf-json) and [pm2-gelf-pro](https://github.com/sethblack/pm2-gelf-pro)
 
 ## Features
 
