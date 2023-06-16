@@ -1,7 +1,7 @@
 {
   "name": "pm2-graylog",
   "version": "1.0.2",
-  "description": "pm2 log send to graylog",
+  "description": "pm2's log sending to graylog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,17 @@
     "gelf-pro": "~1.3",
     "pm2": "latest",
     "pmx": "latest"
-  }
+  },
+  "homepage": "https://github.com/HiWayne/pm2-graylog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/art-ws/pm2-gelf-json.git"
+  },
+  "keywords": [
+    "pm2",
+    "gelf",
+    "json",
+    "graylog",
+    "logging"
+  ]
 }

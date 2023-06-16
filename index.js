@@ -92,9 +92,7 @@ function logDataItem(data = "", explicitLevel) {
     }
   } else {
     if (conf.graylogType === "json") {
-      logData = [JSON.stringify({ msg: data }), parsed];
-    } else {
-      logData = [data, parsed];
+      logData = [JSON.stringify({ msg: data })];
     }
   }
   (logMethods[level] || logMethods[LEVELS.info]).apply(gelf, logData);
