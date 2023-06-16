@@ -16,7 +16,7 @@
   "homepage": "https://github.com/HiWayne/pm2-graylog",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/art-ws/pm2-gelf-json.git"
+    "url": "git+git@github.com:HiWayne/pm2-graylog.git"
   },
   "keywords": [
     "pm2",
