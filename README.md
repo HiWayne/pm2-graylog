@@ -13,26 +13,26 @@ Inspired by [pm2-gelf-json](https://github.com/art-ws/pm2-gelf-json) and [pm2-ge
 ## Installation
 
 ```sh
-pm2 install pm2-gelf-json
+pm2 install pm2-graylog
 ```
 
 ## Needs
 
-When set `pm2 set pm2-gelf-json:pm2LogType 'json'`, needs:
+When set `pm2 set pm2-graylog:pm2LogType 'json'`, needs:
 
 ecosystem.config.js of PM2: `log_type: 'json'`
 
 ## Configuration
 
 ```sh
-$> pm2 set pm2-gelf-json:graylogHost graylog.myserver.org
-$> pm2 set pm2-gelf-json:graylogPort 12201
-$> pm2 set pm2-gelf-json:graylogLogParseErrors true
-$> pm2 set pm2-gelf-json:graylogSplitLines true
-$> pm2 set pm2-gelf-json:gelfCustomConfigs '{"optionKey": "optionValue"}'
-$> pm2 set pm2-gelf-json:gelfAdapterName 'udp'
-$> pm2 set pm2-gelf-json:gelfLogLevelsMapping '0:7,10:7,20:7,30:6,40:4,50:3,60:0'
+$> pm2 set pm2-graylog:graylogHost graylog.myserver.org
+$> pm2 set pm2-graylog:graylogPort 12201
+$> pm2 set pm2-graylog:graylogLogParseErrors true
+$> pm2 set pm2-graylog:graylogSplitLines true
+$> pm2 set pm2-graylog:gelfCustomConfigs '{"optionKey": "optionValue"}'
+$> pm2 set pm2-graylog:gelfAdapterName 'udp'
+$> pm2 set pm2-graylog:gelfLogLevelsMapping '0:7,10:7,20:7,30:6,40:4,50:3,60:0'
 # default normal string
-# pm2 set pm2-gelf-json:pm2LogType 'json'
-# pm2 set pm2-gelf-json:graylogType 'json'
+# pm2 set pm2-graylog:pm2LogType 'json'
+# pm2 set pm2-graylog:graylogType 'json'
 ```
